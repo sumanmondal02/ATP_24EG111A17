@@ -1,0 +1,126 @@
+### Read all users (request to protected route, requires token in header)
+GET http://localhost:4000/user-api/users
+
+###
+GET http://localhost:4000/user-api/actuser
+
+
+### Cross Origin vs Same Origin
+//Cross Origin Request means when the client and the server applications are running on different domains
+//Same Origin Request means the client and the server applications are running on the same domain of the server.
+//Cookies will send along with request automatically in same origin request, but for cross origin request, the token should be explicitly be included to the request 
+
+### Create a new user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"rohitsharma",
+    "name":"Rohit Sharma",
+    "email":"rohit.sharma@example.com",
+    "age":30,
+    "password":"rohit12"
+}
+
+
+### Update a User
+PUT http://localhost:4000/user-api/users/69b2516ea484317923996f4d
+Content-Type: application/json
+
+{
+    "username":"rohitsharma",
+    "password":"iloveyou",
+    "name":"Rohit Sharma",
+    "age":30,
+    "email":"rohit.sharma@example.com"
+}
+
+
+### Delete a User by ID
+DELETE http://localhost:4000/user-api/users/69aaf67274cbb8d2f2ee07d3
+
+
+
+### User Login
+POST http://localhost:4000/user-api/auth/
+Content-Type: application/json
+
+{
+    "email":"rohit.sharma@example.com",
+    "password":"iloveyou"
+}
+
+
+### Add Product to Cart
+PUT http://localhost:4000/user-api/cart/product-id/69aafa4f5137ba35eaa23e16
+
+
+//POST and PUT request should send data to the API as body of the request object. 
+//GET and DELETE do not support body of the request hence, request should send data to the API as query parameters in the URL/through endpoint. 
+
+
+
+
+### Read all Products
+GET http://localhost:4000/product-api/products
+
+### Read all products of a brand
+GET http://localhost:4000/product-api/products/3e4f
+
+### Create a new Product
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productID":"1a2b",
+    "productName":"iPhone 14 Pro Max",
+    "brand":"Apple",
+    "price":12000
+}
+
+###
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productID":"2c3d",
+    "productName":"Samsung Galaxy S23 Ultra",
+    "brand":"Samsung",
+    "price":40000
+}
+
+###
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productID":"3e4f",
+    "productName":"OnePlus 11",
+    "brand":"OnePlus",
+    "price":50000
+}
+
+###
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productID":"4g5h",
+    "productName":"iPhone 14",
+    "brand":"Apple",
+    "price":20000
+}
+
+### Update a Product
+PUT http://localhost:4000/product-api/products/1a2b
+Content-Type: application/json
+
+{
+    "productID":"1a2b",
+    "productName":"iPhone 14 Pro Max",
+    "brand":"Apple",
+    "price":29000
+}
+
+### Delete a Product by ID
+DELETE http://localhost:4000/product-api/products/3e4f
