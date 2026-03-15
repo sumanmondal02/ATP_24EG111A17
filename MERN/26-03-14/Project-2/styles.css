@@ -1,0 +1,31 @@
+img{
+    display: block;
+    float: center;
+    margin: auto;
+    width: 200px;
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 150px;
+}
+
+h3{
+    color: rgb(205, 58, 58);
+}
+h2{
+    color: rgb(8, 74, 64);
+}
+body{
+    background-color: rgb(237, 201, 156);
+    background: linear-gradient(180deg, rgba(237, 201, 156, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+hr{
+    border-color: darkcyan;
+}
