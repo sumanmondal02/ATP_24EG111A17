@@ -9,6 +9,7 @@ This folder contains practice exercises that demonstrate array and object operat
 - Structured cloning (deep copy)
 - Asynchronous JS: timers, promises, simulation
 - Small practical examples (library, payroll-like behaviors, exam/OTP simulators).
+
 and introductory backend examples and two small demo projects that illustrate how to build simple Node.js servers and modular APIs.
 
 
