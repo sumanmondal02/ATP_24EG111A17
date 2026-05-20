@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- forms demo -->
+     <h1>Forms</h1>
+     <form>
+        <div>
+            <label for="Username">Username</label>
+            <input type="text" 
+                name="Username" 
+                id="Username" 
+                placeholder="Enter Username" 
+                autocomplete="off"
+                required minlength="4"
+                maxlength="7">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password"
+                name="Password"
+                id="password"
+                placeholder="Enter your Password">
+        </div>
+        <!-- radio buttons -->
+         <div>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+         </div>
+        <!-- dropdown -->
+         <div class="field">
+            <label for="country">Select Country</label>
+            <select name="country" id="country">
+                <option value="">Select Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </div>
+        <!-- textarea -->
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            </div>
+        <!-- checkbox -->
+         <div class="field">
+            <input type="checkbox" name="Terms" id="terms">
+            <label for="terms">I agree to the terms and conditions</label>
+         </div>
+        <!-- button -->
+         <button type="submit">Login</button>
+         <button type="reset">Reset</button>
+     </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+/* reset */
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+}
+/* width and bgc should be same for heading1 and heading2 and the remain are diff */
+.heading1{
+    text-align: center;
+    width:700px;
+    background-color: lightblue;
+    color: white;
+    font-size: 40px;
+    padding:30px;
+    margin: 40px;
+}
+
+.heading2{
+    width: 700px;
+    text-align: center;
+    background-color: lightgreen;
+    color: rgb(67, 40, 8);
+    font-size: 20px;
+    padding: 15px;
+    margin: 40px;
+}
+.image{
+    width: 100%;
+    width: 400px;
+    justify-content: space-evenly;
+}

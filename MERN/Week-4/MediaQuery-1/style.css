@@ -1,0 +1,20 @@
+h2 {
+    text-align: center;
+    font-size: clamp(1.5rem, 1.51vw, 5rem);
+}
+img{
+    display: block;
+    float: center;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+/* media queries */
+@media screen and (max-width: 800px){
+    body{
+        background-color: rgb(245, 126, 164);
+    }
+}
+@media screen and (max-width: 900px){
+
+}

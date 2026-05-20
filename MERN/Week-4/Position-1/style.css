@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    margin: auto;
+    border: 5px solid black;
+    margin-top: 100px;
+    /* flex container */
+    display: flex;
+    /* flex direction */
+    flex-direction: row;
+    /* justify content */
+    /* justify-content: space-evenly; */
+     justify-content: center;
+     /* align items */
+     align-items: center;
+     /* vertical align */
+    vertical-align: middle;
+
+
+}
+.child{
+    width: 100px;
+    height: 100px;
+}
+.child1{
+    background-color: red;
+    flex-grow: 1;
+}
+.child2{
+    background-color: green;
+    flex-grow: 2;
+}
+.child3{
+    background-color: blue;
+    flex-grow: 3;
+}

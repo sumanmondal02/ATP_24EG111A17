@@ -1,0 +1,44 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.IDcard{
+    width: 450px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    box-shadow: 10px 10px 15px rgba(189, 95, 95, 0.5);
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(104, 241, 200, 0.535);
+}
+img{
+    display: block;
+    float: center;
+    margin-top: 50px;
+    width: 120px;
+    border-radius: 50%;
+}
+h2{
+    font-size: 30px;
+    margin-top: 20px;
+}
+p{
+    font-size: 17px;
+    margin-top: 10px;
+}
+.social-link1{
+    font-size: 30px;
+    position: absolute;
+    width: 150px;
+    height: 45px;
+    padding: 2px;
+    top:582px;
+    left: 154px;
+    background-color: rgb(235, 211, 176);
+    color: rgb(92, 39, 39);
+    border-radius: 20px;
+}
